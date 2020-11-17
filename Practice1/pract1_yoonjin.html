@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: white; color:black"> 
+    <input name="num1" type="text" id="num1">
+    <span>+</span>
+    <input name="num2" type="text" id="num2">
+    <input type="button" value="=" onclick="plus()">
+    <span id="num3"><br></span>
+    <script>
+        function plus(){
+                var num1=parseInt(document.getElementById("num1").value);
+                var num2=parseInt(document.getElementById("num2").value);
+                var result=num1+num2;
+                document.getElementById("num3").innerText=result;
+        }
+    </script> 
+    <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';document.querySelector('body').style.color='white'">
+    <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white';document.querySelector('body').style.color='black'">
+</body>
+</html>
