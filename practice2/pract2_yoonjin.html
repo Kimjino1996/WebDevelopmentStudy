@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Document</title>
+</head>
+<body style="background-color: white; color:black"> 
+    <input name="num1" type="text" id="num1">
+    <input name='op' type="text" id='op'>
+    <input name="num2" type="text" id="num2">
+    <input type="button" value="=" onclick="cal()">
+    <div id="num3"><br></div>
+    <script>
+        function cal(){
+                var num1=parseInt(document.getElementById("num1").value);
+                var num2=parseInt(document.getElementById("num2").value);
+                var op=document.getElementById('op').value
+                if(op=='+'){
+                    var result=num1+num2;
+                }
+                else if(op=='-'){
+                    var result=num1-num2;
+                }
+                else if(op=='*'){
+                    var result=num1*num2;
+                }
+                else if(op=='/'){
+                    var result=num1/num2;
+                }
+                else if(op=='^'){
+                    var result=1;
+                    var i=1;
+                    while(i<=num2){
+                        result=result*num1
+                        i++;
+                    }
+                }
+                document.getElementById("num3").innerText=result;
+        }
+        function nightDay_handler(self) {
+            var target=document.querySelector('body')
+            if(self.value== 'night'){
+                target.style.backgroundColor='black';
+                target.style.color='white'; 
+                self.value='day'
+        }
+        else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                self.value='night'
+        }
+        }
+    </script> 
+    <input type="button" id="toggle" value="night" onclick="nightDay_handler(this)">
+</body>
+</html>
