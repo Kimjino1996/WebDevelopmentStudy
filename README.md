@@ -16,7 +16,6 @@
 
     
     A. 생활 코딩을 통한 JavaScript 기본 개념 숙지
-    https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf
 
     B. practice 3까지 해당 강의를 통한 실습
 
@@ -26,7 +25,6 @@
 
     
     A. Udemy의 강의를 활용하여 진행
-    https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
 
     B. 매주 2Section 진행, 해당 강의 필기자료 각자 이름폴더에 업로드
     
@@ -44,6 +42,12 @@
 
   3. React JS
 
+  * 참고 사이트
+
+  https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
+
+  https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf
+  
   > 2020/11/17: 
   >현재 학습 진행상황 상호 보고, 과제 제출, 추후 스터디 일정 설정, 학습 계획
 
