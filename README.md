@@ -12,6 +12,7 @@
  - 내용 :
 
   1. Java Script
+    
     A. [생활 코딩](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf)을 통한 JavaScript 기본 개념 숙지
     https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf
 
@@ -20,6 +21,7 @@
     C. Node JS 부터 본격적인 스터디 시작
 
   2. Node JS
+    
     A. [Udemy-The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)의 강의를 활용하여 진행
     https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
 
