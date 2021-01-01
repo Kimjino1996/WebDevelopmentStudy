@@ -49,7 +49,7 @@
 
  - Non blocking IO 는 sever Side 에서 되게 좋은 특징이다. 같은 시간에 여러가지의 요청이 다른 유저로 부터 와도 효율적으로 일을 처리 할 수 있다.  (밑 사진 우측이 non blocking)
 
- ![nonblocking](https://user-images.githubusercontent.com/45062255/103443418-6fdb7b80-4ca2-11eb-81c0-c94778fa705f.PNG)>
+ ![nonblocking](https://user-images.githubusercontent.com/45062255/103443418-6fdb7b80-4ca2-11eb-81c0-c94778fa705f.PNG)
 
  - NPM Package 들을 살펴보면, 상당히 많은 기능들을 제공하고 있어서 개발할 때 편리하다.
 
