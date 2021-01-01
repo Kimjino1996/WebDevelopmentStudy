@@ -34,10 +34,10 @@
 
   |       | [곽유진](https://github.com/dbelse)          | [김진오](https://github.com/Kimjino1996)        | [최윤진](https://github.com/yoonjin-choi)        |
   | :---: | ---------- | -------- | ------- |
-  | 1주차 |  |  |  |
-  | 2주차 |  |  |  |
-  | 3주차 |  |  |  |
-  | 4주차 |  |  |  |
+  | 1section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Contents 설명 |  |
+  | 2section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) 설치, Node JS 설명 및 장점 |  |
+  | 3section |  | 1주차 |  |
+  | 4section |  |  |  |
 
 
   3. React JS
