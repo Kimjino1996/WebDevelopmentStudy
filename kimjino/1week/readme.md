@@ -64,3 +64,6 @@
       - java script 는 프로그래밍 랭귀지가 아니라, script code 그 자체이다.
 
  > QnA 일반적인 프로그래밍 랭귀지도 Compiler 와 코드로 구성되어있는데 이 java script 도 따지고 보면 script code 와 실행 engine 으로 구성된 것 아닌가...? compiler 말고 실행 engine 이라 프로그래밍 랭귀지에 포함되지 않는 건가...
+
+ > Study 내용 : java programming 은 스크립트 프로그래밍 언어 node js 는 개별적인 프로그래밍 언어가 아니다.단지 java script를 사용하면서 engine 을 통해 동작제어나 파일입출력을 할 수 있는 런타임.
+ 런타임은 프로그램이 실행되고 있는 때 존재하는 곳  == not frame work 단순히 라이브러리만 가지고 올 수 있다고 해서 프레임워크 x 
