@@ -1,4 +1,4 @@
-# 1주차
+# Week1
 ## Section 2.Installing and Exploring Node.js
 
 ### 1.My first Node.js Script
