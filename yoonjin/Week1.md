@@ -5,7 +5,9 @@
 	
    a. 'App.js' Script 만들기
 		
-   	console.log( ‘Hello Node.js!’)
+   	```javascript
+	console.log( ‘Hello Node.js!’)
+	```
 
 
  b.Script 실행하기
@@ -17,9 +19,10 @@
 ## Section 3. Node.js Module System
 >1.Importing core modules
 
-	
-    const fs = require('fs') // ‘fs’ module 로드하기
-	fs.writeFileSync('notes.txt', 'I live in Philadelphia') // ‘notes’텍스트에 string 작성
+```javascript	
+const fs = require('fs') // ‘fs’ module 로드하기
+fs.writeFileSync('notes.txt', 'I live in Philadelphia') // ‘notes’텍스트에 string 작성
+```
 >2. Importing your own file
 
 -app.js
@@ -45,8 +48,10 @@
 + Step 2) npm install validator@10.8.0 ( npm모듈명@version)
 + validator 사용예제
 		
-        const validator =require('validator')
-		console.log(validator.isURL('https://www.udemy.com'))
+```javascript
+const validator =require('validator')
+console.log(validator.isURL('https://www.udemy.com'))
+```
  
 
 + npm module 관련 method & searching 참고 : www.npmjs.com
