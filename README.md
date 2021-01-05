@@ -36,7 +36,7 @@
   | :---: | ---------- | -------- | ------- |
   | 1section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Contents 설명 |  |
   | 2section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) 설치, Node JS 설명 및 장점 |  |
-  | 3section |  | 1주차 |  |
+  | 3section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Module 을 Load 할 때, NPM Pacakge 에 대한 설명 |  |
   | 4section |  |  |  |
 
 

@@ -67,3 +67,56 @@
 
  > Study 내용 : java programming 은 스크립트 프로그래밍 언어 node js 는 개별적인 프로그래밍 언어가 아니다.단지 java script를 사용하면서 engine 을 통해 동작제어나 파일입출력을 할 수 있는 런타임.
  런타임은 프로그램이 실행되고 있는 때 존재하는 곳  == not frame work 단순히 라이브러리만 가지고 올 수 있다고 해서 프레임워크 x 
+
+
+ ## 3Section
+1. note taking app 만들기
+        
+    - file system 사용
+    - node module 의 load
+        - module 이란 이전의 사람들이 만들어 둔 코드
+        - const fs = require('fs') 형식으로 모듈 임포트.== python 의 import pandas as pd
+        
+    - 내가 만든 파일을 load 할 수 도 있다.
+        -  require(./utils.js)
+        - load 한다고 할 수 있음
+        - 하지만 load 한다고 해서 각자 영역에 있는 변수 명을 참조 할 수 없음.
+        - 참조하기 위해서는 module.exports 사용해야함. 
+            - const name ="mike"
+            - module.exports= name과 같은 방식 사용
+        - 해당 변수를 export 했을 때,
+        const name= require('./utils.js') 형식으로 return 값 받듯 받아야함. 
+        <br/>
+       
+        - function 을 export 했을 때는?
+            - const add = function(a,b){
+
+                return a+b
+           
+                }
+            - module.exports =add ?
+            - const add = require 로 집어넣었을 때.
+            - sum = add (4,-2)가 원래 기존 파일에서 동작한다. 
+
+    - NPM Module 을 load 할 때.
+        - Java Script Object Notation ==JSON
+        -  ex) const validator=require('validator')
+        - validator install 하면 package.json 에도 변화가 생기고 package-lock.json 에도 변화가 생김. lock json 에는 command를 실행 하기 전의 데이터를 보관.
+        - package 는 우리가 install 한 package 의 dependency 를 보관.
+        - ES6(ECMAScirpt6): 기존에 사용하던 문법 ES 3로는 표현에 한계가 있고 기능이 적어서 새로 만들어진 표준. 페이스북 react 와 같은 최신 javascript 프레임 워크들이 ES6 기반으로 개발.
+            - import validator from 'validator'
+    - NPM install 을 하게되면 package json 과 package json lock 에 해당 내용이 기록되며 node module 이 만들어집니다.
+    - git hub 나 code를 압축해서 다운 받았을 경우 node module 이 존재 하지 않을 수 있습니다. 해당 경우에는 package.json 이나 package-lock.json 파일 을 이용하여 node module 을 다시 만들 수 있습니다. 
+        - npm install => contents of package , package-lock 의 dependencies 참고해서 node module 만들어줌
+               
+    
+    - chalk package (text styling)
+        - web server 를 구성할 때 error log 나 warning message log에 사용할 수 있음.
+    
+    - Nodemon
+        - 만약 install 시 -g 옵션을 붙여준다면 프로젝트 안에서 파일이 생성되거나 json 에 표시되지 않는다.
+        - nodemon file 은 관리자 권한에서 확인 가능하다.
+        - demon 형식으로 프로그램이 back 에서 계속 돌아가며, restart 전까지 Code 에 change 가 발생하면, 해당 Code 로 새로운 Output 을 보여준다. 
+        
+
+
