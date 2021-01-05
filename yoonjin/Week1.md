@@ -5,9 +5,9 @@
 	
    a. 'App.js' Script 만들기
 		
-   	```javascript
-	console.log( ‘Hello Node.js!’)
-	```
+```javascript
+console.log( ‘Hello Node.js!’)
+```
 
 
  b.Script 실행하기
