@@ -31,11 +31,13 @@
     
 -notes.js 
 	
-    const getNotes = function(){
+```javascript
+	const getNotes = function(){
     	const str="Your notes..."
     	return str;
 	}
-	module.exports=getNotes  *//getNotes 함수를 script사이에서 공유가능하도록 함.*
+	module.exports=getNotes  //getNotes 함수를 script사이에서 공유가능하도록 함.
+```
 
  >3.Importing npm Modules
 
