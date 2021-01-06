@@ -94,20 +94,20 @@ yargs.parse()
     }
     ```
 ## Section 5. Debugging Node.js
-    1. console. log 사용하기
-   		- 너무 많은 variable 출력하여 확인하기 힘들다
+1. console. log 사용하기
+  - 너무 많은 variable 출력하여 확인하기 힘들다
     
-    2. Node debugger 사용
+2. Node debugger 사용
     
-    	- built-in tool
-    	- V8 & 크롬 브라우저와 통합 
-		- application을 중단 후 모든 것을 볼 수 있다.
-        - 사용 방법
-   	  	  1. 코드에 debugger 추가
-   		  2. node inspect app.js add -- title='course' --body='Node.js'
-   		  3. chrome 통해 chrome://inspect 접속
-   		  4.  device 등록 (127.0.0.1:9229 입력) - device inspect
-   		  5.  <img src="./img/debugging.PNG" width="450px" height="300px"  ></img>
+ - built-in tool
+ - V8 & 크롬 브라우저와 통합 
+ - application을 중단 후 모든 것을 볼 수 있다.
+ - 사용 방법
+   1. 코드에 debugger 추가
+   2. node inspect app.js add -- title='course' --body='Node.js'
+   3. chrome 통해 chrome://inspect 접속
+   4.  device 등록 (127.0.0.1:9229 입력) - device inspect
+   5.  <img src="./img/debugging.PNG" width="450px" height="300px"  ></img>
         
       
 
