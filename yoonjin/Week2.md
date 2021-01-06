@@ -93,7 +93,7 @@ yargs.parse()
      	}
     }
     ```
-    ## Section 5. Debugging Node.js
+## Section 5. Debugging Node.js
     1. console. log 사용하기
    		- 너무 많은 variable 출력하여 확인하기 힘들다
     
