@@ -116,7 +116,7 @@
     
     - Nodemon
         - 만약 install 시 -g 옵션을 붙여준다면 프로젝트 안에서 파일이 생성되거나 json 에 표시되지 않는다.
-        - nodemon file 은 관리자 권한에서 확인 가능하다.
+        - nodemon install 이 error 가 날 경우 관리자 권한으로 install 한다.
         - demon 형식으로 프로그램이 back 에서 계속 돌아가며, restart 전까지 Code 에 change 가 발생하면, 해당 Code 로 새로운 Output 을 보여준다. 
         
 
