@@ -100,6 +100,7 @@
 
     - NPM Module 을 load 할 때.
         - Java Script Object Notation ==JSON
+        - NPM init 시 package.json 생성 package-lock.json 은 install 시 생성
         -  ex) const validator=require('validator')
         - validator install 하면 package.json 에도 변화가 생기고 package-lock.json 에도 변화가 생김. lock json 에는 command를 실행 하기 전의 데이터를 보관.
         - package 는 우리가 install 한 package 의 dependency 를 보관.
