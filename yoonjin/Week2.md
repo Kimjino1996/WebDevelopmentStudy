@@ -103,7 +103,6 @@ yargs.parse()
     	- V8 & 크롬 브라우저와 통합 
 		- application을 중단 후 모든 것을 볼 수 있다.
         - 사용 방법
-        <br/>
    	  	  1. 코드에 debugger 추가
    		  2. node inspect app.js add -- title='course' --body='Node.js'
    		  3. chrome 통해 chrome://inspect 접속
