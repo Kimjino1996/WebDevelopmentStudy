@@ -179,15 +179,15 @@ fs.writeFileSync('1-jon.json',JSON.stringify(myinfoObj)) //object to JSON string
        <img src="./img/asynchronous.PNG" width="700px" height="450px"  ></img>
   2. Call stack
 	  + V8과 javaScript engine에 의해 제공되는 간단한 데이터 structure.
-	  + 실행되고 있는 모든 함수들을 지속적으로 관리
+	  + 실행되고 있는 모든 함수들을 지속적으로 관리하는 곳
 	  + Last In First Out 의 Stack 형태
   
   3. Node APIS
-	  + **setTimeout** 은 javscript definition 도 아니고 v8에 속하는 것도 아닌, Nodejs에서 제공하는 c++을 사용하여 구현된 function.
+	  + **setTimeout** 은 javscript definition 도 아니고 v8에 속하는 것도 아닌, Nodejs에서 제공하는 c++을 사용하여 구현된 function.(web API에서 제공하는 비동기 함수)
 	  + **setTimeout()**  호출 시, node API에 등록되어 (위 얘제에서는) 2초간 대기.
 	  + 그 동안, Call Stack에서는 다른 함수 수행 가능.    
-	  + java script는 single threaded progmming language.
-	  + 실행코드는 single threaded 이지만, node는 event를 처리하기 위해 뒤에서 C++ 활용하는 다른 thread를 사용하는 것. -> non blocking nature of node.js
+	  + java script는 single thread 동작 언어. 즉, 한번에 하나의 작업만 수행 가능.
+	  + 하지만, 동시성을 보장하는 비동기(asynchronous), nonblocking 작업들은 javascript engine을 구동하는 runtime 환경 즉, Node.js에서 담당.
 	 + **setTimeout(func(),0)** 또한 node API에 등록된 후 0초 대기 
   4. callback queue
 	 + event가 끝이 나면, **setTimeout(func(),0)** 은 Callback Queue 에 추가
