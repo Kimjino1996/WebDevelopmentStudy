@@ -70,14 +70,15 @@ yargs.parse()
 ```javascript
 //1.Load and parse the JSON data
 const myinfo=fs.readFileSync('1-jon.json')
-const myinfoObj=JSON.parse(myinfo.toString()) // Json string to object
+const myinfoObj=JSON.parse(myinfo.toString()) // JSON string to object
+
 //2.Change the name and age property using my info
 myinfoObj.name='yoonjin'
 myinfoObj.age=25
 console.log(myinfoObj)
  
 //3. Stringify the changed object and overwrite original data
-fs.writeFileSync('1-jon.json',JSON.stringify(myinfoObj)) object to JSON string
+fs.writeFileSync('1-jon.json',JSON.stringify(myinfoObj)) //object to JSON string
 ```
 ### 4. Arrow functions
 ```javascript
