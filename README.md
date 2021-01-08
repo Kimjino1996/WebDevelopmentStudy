@@ -34,7 +34,7 @@
 
   |       | [곽유진](https://github.com/dbelse)          | [김진오](https://github.com/Kimjino1996)        | [최윤진](https://github.com/yoonjin-choi)        |
   | :---: | ---------- | -------- | ------- |
-  | 1section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Contents 설명 |  |
+  | 1section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Contents 설명 | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week1) |
   | 2section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) 설치, Node JS 설명 및 장점 |  |
   | 3section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Module 을 Load 할 때, NPM Pacakge 에 대한 설명 |  |
   | 4section |  |  |  |
