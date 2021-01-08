@@ -22,14 +22,15 @@ console.log( ‘Hello Node.js!’)
   + javaScript Runtime 으로 , 핵심 자바스크립트 언어이지만 사용자 정의 function과 object들이 포함된 것으로 , 개발자가 필요로 하는 다양한 tool을 제공.
   <br>
   <img src="./img/nodejs.PNG" width="700px" height="450px"  ></img>
-   + chrome과 Node는 V8 으로 js 코드를 전달하여 결과 반환.
-   + V8은 C++로 작성되었으며 크롬과 노드 또한 대부분 C++로 작성.
-    > -> 크롬과 노드 모두 C++를 많이 사용하는 이유는 V8 엔진을 인스턴스화할 때 둘 다 바인딩을 제공하기 때문.
-    > 단순히 자바스크립트 코드를 V8에 전달하는 것이 아니라, 이러한 C++ 바인딩을 전달하여 자바스크립트 코드를 실행해야 하는 컨텍스트를 만드는 것.
-   + Chrome은 javascript에 포함되지 않은 DOM과도 interact 가능
-   + node는 javascript에 포함되지 않은 file system과도 interact 가능
-   + 두 함수 모두 자바스크립트 프로그래밍 언어의 일부가 아님.
-   +  그것들은 실제로 크롬 or node.js 런타임에 의해 구현되기 때문입니다.
+  
+  + chrome과 Node는 V8 으로 js 코드를 전달하여 결과 반환.
+  + V8은 C++로 작성되었으며 크롬과 노드 또한 대부분 C++로 작성.
+   > -> 크롬과 노드 모두 C++를 많이 사용하는 이유는 V8 엔진을 인스턴스화할 때 둘 다 바인딩을 제공하기 때문.
+   > 단순히 자바스크립트 코드를 V8에 전달하는 것이 아니라, 이러한 C++ 바인딩을 전달하여 자바스크립트 코드를 실행해야 하는 컨텍스트를 만드는 것.
+  + Chrome은 javascript에 포함되지 않은 DOM과도 interact 가능
+  + node는 javascript에 포함되지 않은 file system과도 interact 가능
+  + 두 함수 모두 자바스크립트 프로그래밍 언어의 일부가 아님.
+  +  그것들은 실제로 크롬 or node.js 런타임에 의해 구현되기 때문입니다.
  
 ## Section 3. Node.js Module System
 >1.Importing core modules
