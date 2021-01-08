@@ -19,7 +19,9 @@ console.log( ‘Hello Node.js!’)
  
  ### 2. Node.js는 무엇인가
   + Nodjs 는 **프로그래밍 언어가 아니다.**
-  + javaScript runtime 으로 , 핵심 자바스크립트 언어이지만 사용자 정의 function과 object들이 포함된 것으로 , 개발자가 필요로 하는 다양한 tool을 제공.
+  + javaScript Runtime 으로 , 핵심 자바스크립트 언어이지만 사용자 정의 function과 object들이 포함된 것으로 , 개발자가 필요로 하는 다양한 tool을 제공.
+  <br>
+  <img src="./img/nodejs.PNG" width="700px" height="450px"  ></img>
   + chrome과 Node는 V8 으로 js 코드를 전달하여 결과 반환.
   + V8은 C++로 작성되었으며 크롬과 노드 또한 대부분 C++로 작성.
    > -> 크롬과 노드 모두 C++를 많이 사용하는 이유는 V8 엔진을 인스턴스화할 때 둘 다 바인딩을 제공하기 때문입니다.
