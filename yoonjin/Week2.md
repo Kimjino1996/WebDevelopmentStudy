@@ -64,6 +64,21 @@ yargs.parse()
 		>contents: Milk,Yogurt,Cheese
 
 ### 3. Storing Data using JSON
+- JSON : attribuite - value 쌍으로 이루어진 데이터 오브젝트를 전달하기 위한 개방형 표준 포맷
+- Javascript value 를 JSON string으로 변환 후, 파일에 write 한다.
+- JSON string을 Javascript value로 변환하여 읽어올 수 있다.
+```javascript
+//1.Load and parse the JSON data
+const myinfo=fs.readFileSync('1-jon.json')
+const myinfoObj=JSON.parse(myinfo.toString()) // Json string to object
+//2.Change the name and age property using my info
+myinfoObj.name='yoonjin'
+myinfoObj.age=25
+console.log(myinfoObj)
+ 
+//3. Stringify the changed object and overwrite original data
+fs.writeFileSync('1-jon.json',JSON.stringify(myinfoObj)) object to JSON string
+```
 ### 4. Arrow functions
 ```javascript
     //일반적인 함수 형태
