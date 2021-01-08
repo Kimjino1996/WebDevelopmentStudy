@@ -45,7 +45,7 @@ fs.writeFileSync('notes.txt', 'I live in Philadelphia') // ‘notes’텍스트�
  >3.Importing npm Modules
 
 + Step 1) initialize npm – npm init (from the root of the project)
-	npm init -y : 모든 항목을 default 설정 후 package.json file 생성
+	- npm init -y : 모든 항목을 default 설정 후 package.json file 생성
 + Step 2) npm install validator@10.8.0 ( npm모듈명@version)
 + validator 사용예제
 		
