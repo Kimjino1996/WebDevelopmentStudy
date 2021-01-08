@@ -59,9 +59,9 @@ yargs.parse()
 		$ node app.js add --title="Shopping List" --body="Milk,Yogurt,Cheese"
 
 	result)
-   			 Adding a new note!   
-			Title: Shopping List   
-			contents: Milk,Yogurt,Cheese
+   		>Adding a new note!   
+		>Title: Shopping List   
+		>contents: Milk,Yogurt,Cheese
 
 ### 3. Storing Data using JSON
 ### 4. Arrow functions
