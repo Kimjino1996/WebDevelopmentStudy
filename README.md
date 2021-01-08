@@ -29,7 +29,7 @@
     B. 매주 2Section 진행, 해당 강의 필기자료 각자 이름폴더에 업로드
     
     C. practice 4부터 해당 강의 실습내용 
-ㅎ
+
     D. 해당주차 필기자료 내용 확인
 
   |       | [곽유진](https://github.com/dbelse)          | [김진오](https://github.com/Kimjino1996)        | [최윤진](https://github.com/yoonjin-choi)        |
