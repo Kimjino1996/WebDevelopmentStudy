@@ -1,7 +1,7 @@
 # 1주차
 ## Section 2. Installing and Exploring Node.js
 
-### 1.My first Node.js Script
+### 1. My first Node.js Script
 	
    a. 'App.js' Script 만들기
 		
@@ -16,6 +16,22 @@ console.log( ‘Hello Node.js!’)
  	$ node app.js 
 
  result) Hello Node js!
+ 
+ ### 2. Node.js는 무엇인가
+  + Nodjs 는 **프로그래밍 언어가 아니다.**
+  + javaScript Runtime 으로 , 핵심 자바스크립트 언어이지만 사용자 정의 function과 object들이 포함된 것으로 , 개발자가 필요로 하는 다양한 tool을 제공.
+  <br>
+  <img src="./img/nodejs.PNG" width="700px" height="450px"  ></img>
+  
+  + chrome과 Node는 V8 으로 js 코드를 전달하여 결과 반환.
+  + V8은 C++로 작성되었으며 크롬과 노드 또한 대부분 C++로 작성.
+   > -> 크롬과 노드 모두 C++를 많이 사용하는 이유는 V8 엔진을 인스턴스화할 때 둘 다 바인딩을 제공하기 때문.
+   > 이러한 C++ 바인딩을 전달하여 자바스크립트 코드를 실행해야 하는 컨텍스트를 만든다.
+  + Chrome은 javascript에 포함되지 않은 DOM과도 interact 가능
+  + node는 javascript에 포함되지 않은 file system과도 interact 가능
+  + 위 그림의 (localStorage.getItem, document.querySelecor , fs.readFile ,os.platform 등의 함수 모두 자바스크립트 프로그래밍 언어의 일부가 아니다.
+  + 그것들은 실제로 크롬 or node.js Runtime에 의해 구현되는 것이다.
+ 
 ## Section 3. Node.js Module System
 >1.Importing core modules
 
@@ -45,6 +61,7 @@ fs.writeFileSync('notes.txt', 'I live in Philadelphia') // ‘notes’텍스트�
  >3.Importing npm Modules
 
 + Step 1) initialize npm – npm init (from the root of the project)
+	- npm init -y : 모든 항목을 default 설정 후 package.json file 생성
 + Step 2) npm install validator@10.8.0 ( npm모듈명@version)
 + validator 사용예제
 		
