@@ -219,7 +219,31 @@ fs.writeFileSync('1-jon.json',JSON.stringify(myinfoObj)) //object to JSON string
     		console.log(data.current)
 		})
     ```
-     
+    
+### 4. HTTP Request 맞춤설정하기.
+ 1. *chrome extension* 다운로드 사용하여 JSON data를 정리된 형태로 보여줌.
+ 2. json: true 통해 respone body를 JSON으로 parse.(JSON.parse() 따로 사용할 필요 없음.)
+  ```javascript
+  request({ url:url, json : true },(error,response)=> {
+  	console.log(response.body.current)
+}
+```
+ 3. 필요한 설정 추가 및 필요한 데이터만 가져오기
+ ```javascript
+ const url ='http://api.weatherstack.com/current?access_key=0394f78f3876a54a71655a23d096c115&query=37.8267,-122.4233&units=f' //units =f 추가하여 온도 단위 변경
+
+request({ url:url, json : true },(error,response)=> { // parse the response body as JSON
+    //const data= JSON.parse(response.body)
+    //console.log(data.current)
+    const temp=response.body.current.temperature
+    const feel_temp=response.body.current.feelslike
+
+    console.log(response.body.location.country+"'s weather is "+response.body.current.weather_descriptions[0]+".")
+    //United States of America's weather is Clear. (지역, 날씨 정보)
+    console.log("It is currently ",temp," degrees out. It feels like ",feel_temp," degrees out.")
+    //It is currently  46  degrees out. It feels like  45  degrees out.(온도 및 체감온도)
+})
+  	
         
       
 
