@@ -228,13 +228,11 @@ fs.writeFileSync('1-jon.json',JSON.stringify(myinfoObj)) //object to JSON string
   	console.log(response.body.current)
 }
 ```
- 3. 필요한 설정 추가 및 필요한 데이터만 가져오기
+ 3. 필요한 설정 추가(URL) 및 필요한 데이터만 가져오기
  ```javascript
  const url ='http://api.weatherstack.com/current?access_key=0394f78f3876a54a71655a23d096c115&query=37.8267,-122.4233&units=f' //units =f 추가하여 온도 단위 변경
-
-request({ url:url, json : true },(error,response)=> { // parse the response body as JSON
-    //const data= JSON.parse(response.body)
-    //console.log(data.current)
+ // url에 units =f 추가하여 온도 단위 변경
+ request({ url:url, json : true },(error,response)=> { // parse the response body as JSON
     const temp=response.body.current.temperature
     const feel_temp=response.body.current.feelslike
 
