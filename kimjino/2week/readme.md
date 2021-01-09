@@ -162,4 +162,22 @@
 
 > code 에서 yargs.parse 와 command 를 바꿔서 동작하면 돌아가지 않는다 왜일까.,,?
 
+## Section5
+
+- Javascript Debugging
+    - debugger 라는 code 를 입력해도 inspect 라는 command 를 terminal 에서 안치면 소용 없음.
+    - window 에서 에러가 있을 수 있음 --inspect-brk 를 사용해서 치는 것을 추천.
+    - chrome engine 에서 debugging 하는 것.
+    - chrome://inspect/#devices 에서 확인 가능
+    - inspect 창에서 work space 에서 module , file 등을 잘 가지고와야 잘 돌아감. 아니면 JS가 아닌 것 처럼 돌아간다.
+
+
+## Section6
+
+- Contents
+    - Making Weather App
+        - User가 자신의 위치를 제공하는 Front-End 가 있을 경우
+        - 이 어플리케이션이 로케이션을 통해 커뮤니케이션하는 써드파티(특정한 기능을 수행하는 라이브러리, 프로그램에서 호출되는 API 같은 역할)서비스를 제공
+        - 해당 Forecast data를 다시 front-end(browser)로 send 한다.
+        - 그렇기 때문에 이번 섹션에서는 asynchronous 와 call(back) 에 대하여 다룬다. 
 
