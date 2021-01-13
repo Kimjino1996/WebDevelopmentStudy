@@ -158,9 +158,19 @@
 
 
 > QnA build 와 실행, 실행 engine 에 올라가는 것에 정확한 구분 필요.
+> Compile 
+  컴파일은 해당 파일만을 컴파일해서 object 파일을 생성한다.
+  
+  > Build
+  빌드는 관련된 모든 파일을 컴파일해서 object 파일을 만든 뒤, link를 해서 실행가능한 exe/bpl/bpk 등의 파일을 생성한다.
+  
+  > Run
+  프로그램을 실행한다. 여기서 실행은 통상 디버깅 모드로 실행함을 뜻한다. 
 
+> code 에서 yargs.parse 와 command 를 바꿔서 동작하면 돌아가지 않는다.
 
-> code 에서 yargs.parse 와 command 를 바꿔서 동작하면 돌아가지 않는다 왜일까.,,?
+> arrow function 의 경우 this 를 사용 할 수 있다. 하지만 그 경우 그 object 를 가르키는 this 가 아닌 현재 현재 범위의 바깥으로 나가 가장 가까운 this 가 가르키고 있는 것을 참조한다. 
+
 
 ## Section5
 
@@ -170,6 +180,7 @@
     - chrome engine 에서 debugging 하는 것.
     - chrome://inspect/#devices 에서 확인 가능
     - inspect 창에서 work space 에서 module , file 등을 잘 가지고와야 잘 돌아감. 아니면 JS가 아닌 것 처럼 돌아간다.
+
 
 
 ## Section6

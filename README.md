@@ -38,7 +38,7 @@
   | 2section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) 설치, Node JS 설명 및 장점 |[1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week1.md) Nodejs 설치하기  |
   | 3section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Module 을 Load 할 때, NPM Pacakge 에 대한 설명 |[1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week1.md) npm module 설치 및 chalk,validator 활용  |
   | 4section |  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/2week) JSON File IO & Using Command Line argument  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md) cmd line input 받아오기/      JSON data 저장/ Arrow function 활용  |
-  | 5section |  |  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md) Node.js 디버깅  |
+  | 5section |  | [2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/2week) NodeJS Debugging with inspection in browser |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md) Node.js 디버깅  |
   | 6section |  |  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md)   |
 
 
@@ -58,3 +58,12 @@
 
   > 2021/01/02:
   > 다음 시간까지 DOM 개념 파악하고 토의, 한 주에 4시간 반 씩 강의 듣는 걸로 변경=> 다음주 34강까지
+
+
+  > 2021/01/09 :
+
+  > 1. Front-End 만들어보기, 김진오가 13일까지 공모전이고 Postech mooc 15일까지라 좀 천천히 이야기해보기로 함. 
+  > 2. Compile build run 
+  > 3. arrow function 사용 방법 토론 
+  > 4. DOM 에 대한 간단한 토의
+  > 5. git hub 사용 방법 토론
