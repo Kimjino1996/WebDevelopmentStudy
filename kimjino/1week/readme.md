@@ -115,7 +115,7 @@
         - web server 를 구성할 때 error log 나 warning message log에 사용할 수 있음.
     
     - Nodemon
-        - 만약 install 시 -g 옵션을 붙여준다면 프로젝트 안에서 파일이 생성되거나 json 에 표시되지 않는다.
+        - 만약 install 시 -g 옵션을 붙여준다면 프로젝트 안에서 파일이 생성되거나 json 에 표시되지 않는다. (global 에서 설치되기 때문)
         - nodemon install 이 error 가 날 경우 관리자 권한으로 install 한다.
         - demon 형식으로 프로그램이 back 에서 계속 돌아가며, restart 전까지 Code 에 change 가 발생하면, 해당 Code 로 새로운 Output 을 보여준다. 
         

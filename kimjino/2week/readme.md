@@ -31,14 +31,15 @@
             - arugment 는 parsing 해서 쓴다.
 
         - yarg module 을 이용하여 process.argv 가 아닌 yarg.argv 로 사용 할 수 있음.
-            - command,=> _로 표시(add) 와 title ( --title="things to buy") 형식으로 출력.
+            - node app.js add --title="things to buy" 명령어 입력시
+            - command는 => _로 출력.  _  :['add'] 와 title:"things to buy" 형식으로 출력.
             - help 입력시 Option 과 정의된 command 를 확인 할 수 있음. 
             - 실행시 argument 로 version 을 쳐서, 도움말과 yarg version 을 확인 할 수 있음.
             - yarg.command 로 첫번째 위치의 argv(command 자리) 를 호출 가능.
                 - yarg.command({ ~~ property ~~ }) 안에 property인 command (이름) , describe (커맨드 설명), handler (함수), builder 를 가지고 있음.
                 - builder 의 경우는 command line 에서 node 를 실행 (build)시 주어지는 option 에 대한 설정이 가능
                     - --title 의 option 의 describe (설명 ), demandOption(꼭 포함 해야하는지 여부), 그리고 해당 Option이 argument 를 통해서 받는 value 값의 type 등을 설정 할 수 있다. 
-                    - builder :{title: { ~ } } 등으로 설정.
+                    - builder :{title: { ~ } } 등으로 설정.`
                     - 즉, command 가 돌아갈 때 사용되는 parameter에 대해 정의한다.
                     
             - 이렇게 정의를 해놓아도 자동으로 돌아가지 않는다. yargs 모듈을 호출해서 argument 를 parsing 하는 과정을 진행해야 해당 handler 가 동작하던가 한다.
@@ -176,6 +177,7 @@
 
 - Javascript Debugging
     - debugger 라는 code 를 입력해도 inspect 라는 command 를 terminal 에서 안치면 소용 없음.
+    - ex) node inspect app.js ~~~
     - window 에서 에러가 있을 수 있음 --inspect-brk 를 사용해서 치는 것을 추천.
     - chrome engine 에서 debugging 하는 것.
     - chrome://inspect/#devices 에서 확인 가능
