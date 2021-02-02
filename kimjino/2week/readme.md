@@ -41,6 +41,7 @@
                     - --title 의 option 의 describe (설명 ), demandOption(꼭 포함 해야하는지 여부), 그리고 해당 Option이 argument 를 통해서 받는 value 값의 type 등을 설정 할 수 있다. 
                     - builder :{title: { ~ } } 등으로 설정.`
                     - 즉, command 가 돌아갈 때 사용되는 parameter에 대해 정의한다.
+                    >> 여기서 -- title 로 title 을 표시하는데 왜 그렇냐면 -a , -b 등은 보통 실행파일의 옵션을 나타낸다. 허나 -- 뒤의 parameter 들은 string 그 자체로 실행파일의 function의 인자로 들어가기 때문에 --title 과 같은 방식으로 프로그램을 실행한 것(positional argument) 
                     
             - 이렇게 정의를 해놓아도 자동으로 돌아가지 않는다. yargs 모듈을 호출해서 argument 를 parsing 하는 과정을 진행해야 해당 handler 가 동작하던가 한다.
             - console.log(yargs.argv) 방법으로 한번 호출 해도 되고, yargs.parse() 함수를 호출 해도 됨. 
