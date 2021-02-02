@@ -28,7 +28,7 @@
 
     B. 매주 2Section 진행, 해당 강의 필기자료 각자 이름폴더에 업로드
     
-    C. practice 4부터 해당 강의 실습내용 
+    C. 각 섹션마다 실습자료 본인 이름 폴더에 업로드 
 
     D. 해당주차 필기자료 내용 확인
 
@@ -39,7 +39,7 @@
   | 3section |  | [1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/1week) Module 을 Load 할 때, NPM Pacakge 에 대한 설명 |[1주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week1.md) npm module 설치 및 chalk,validator 활용  |
   | 4section |  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/2week) JSON File IO & Using Command Line argument  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md) cmd line input 받아오기/      JSON data 저장/ Arrow function 활용  |
   | 5section |  | [2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/2week) NodeJS Debugging with inspection in browser |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md) Node.js 디버깅  |
-  | 6section |  |  |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md)   |
+  | 6section |  |[3주차](https://github.com/Kimjino1996/WebDevelopmentStudy/tree/main/kimjino/3week)  http request with restAPI & async with call back func |[2주차](https://github.com/Kimjino1996/WebDevelopmentStudy/blob/main/yoonjin/Week2.md)   |
 
 
   3. React JS
