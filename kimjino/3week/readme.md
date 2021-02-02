@@ -66,14 +66,53 @@
 
     - reusable 한 abstract call back function 을 짜보자.
 
-4. es6 에서 object 란.
+4. es6 에서 object 사용팁
     - Object property shorthand
         - object Destructuring
             - object 에서 필요한 값만 추출해 낸다.
 
 
+```    
+geocode(address,(error,{lat,lon,location}={})=>{
+    if(error){
+        return console.log('error',error)
+    } // 끝낸다는것을 return으로 명시적으로 보여준다.
+    else{        
+        forecast(reponse.lat,response.lon,(error,data)=>{
+            if(error){
+                return console.log('error',error)
+            }
+            else{
+                console.log('error',error)
+                console.log('data',data)
+            }
+        })
+    }
+})
+```
+- short hand 할 시 위 코드와 같이 lat, lon, loc 을 인자로 쓰면 되지만, 해당 request 가 실패하여 undefined 로 인해 lat, lon,loc 이 제대로 선언되지 않을 경우를 대비하여 ={}와 같은 default empty 값을 대입한다.   
+
+- 참고로 rename 시에 선언과 실행 시의 rename 순서는 다른 것 같다. 
+
+
+
+        callback(undefined,{
+            lat:body.feature[0].center[1],
+            lon:body.feature[0].center[0],
+            location:body.feature[0].place_name
+         })
+         
+        vs
+
+        const {label:productLable,stock}=product 
+        console.log(productLabel)
+        console.log(stock)
+
+
+>> function 의 default 값을 설정 해놓는 것도 좋다.
 >> yargs 를 통해 실행시킬 때, builder demand option
 >> example code 에서 const data={ lat :0, lon :0 } 이 나오는데 lat=0, lon =0 을 하지 않는 이유는 lat lon 은 data 의 property 이기 때문이다.
 >> 근본적 궁금증 var 과 const 의 차이는 ? 
 >> var은 재선언이 되어 큰 크기의 프로그래밍을 할 때 적합하지 않음. let 의 경우 재 할당은 가능하지만 재선언 불가능, const 는 재선언 재할당 둘다 불가능. 
 
+>>> rename 순서 확인

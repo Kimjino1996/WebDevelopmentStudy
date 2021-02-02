@@ -176,3 +176,49 @@ const {label,stock,refactoring=5}=product // 없는 값이라도 default 값을 
 //만약 refactoring 에 대해서 product 에서 선언하여 값을 수정한다면, 해당 값으로 출력됨.
 
 
+//실전 사용
+const transaction=(type,{label,stock})=>{
+    console.log(type,label,stock)
+}
+transaction('order',product)
+
+//실전 사용 2
+geocode(address,(error,{lat,lon,location}={})=>{
+    if(error){
+        return console.log('error',error)
+    } // 끝낸다는것을 return으로 명시적으로 보여준다.
+    else{        
+        forecast(reponse.lat,response.lon,(error,data)=>{
+            if(error){
+                return console.log('error',error)
+            }
+            else{
+                console.log('error',error)
+                console.log('data',data)
+            }
+        })
+    }
+})
+
+
+// 다른 코드 destruct
+
+const geocode =(address, callback)=>{
+    const url ='https://api.mapbox.com/geocoding/v5/mapbox.places/'+address+'.json'
+
+    request({url,json:true},(error,{body})=>{ //url 이 이름이 같으니까.
+        if (error){
+            callback('unable',undefined)
+        }
+        else if(body.feature.length===0){
+             callback('unfind',undefined)
+        }
+        else{
+            callback(undefined,{
+                lat:body.feature[0].center[1],
+                lon:body.feature[0].center[0],
+                location:body.feature[0].place_name
+            })
+        }
+    })
+}
