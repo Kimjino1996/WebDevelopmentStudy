@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .photo_des {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            height:50%;
+            width:100%;
+            /*width:700px;*/
+        }
+        .photo_container{
+            width:50%;
+            height:100%;
+        }
+        .photo_container img{
+            width:100%;
+            height:100%;
+        }
+        .memo{
+            height:50%;
+        }
+        </style>
+        <script>
+            //var x=root;
+            function closeWin() {
+                //document.getElementsByClassName("bin")[0].style.backgroundColor="black";
+                window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="photo_des">
+            <div class="photo_container">
+                <img src="asset/img/celebrity.PNG"/>
+            </div>
+            <div id="private_inform">
+            </div>
+        </div>
+
+        <div class="memo">
+            <p>
+                메모한내용을 표시하여 봅시다
+            </p>
+        </div>
+
+        <div class="endbutton">
+            <button type="button" onClick="closeWin()">
+                이전 List로
+            </button>
+        </div>
+        <script>
+            var x= window.location.href.split('/');
+            var txt=''
+            for ( var i =0 ;i <x.length;i++){
+                txt+=i+' ' +x[i]+'</br>'
+            }
+            document.getElementsByClassName("memo")[0].innerHTML = txt;
+            //"The full URL of this page is:<br>" + 
+            
+            var text='{"employes":['+
+                '{"firstName":"진오","lastName":"김","id":"moreInfo1"},'+
+                '{"firstName":"John2","lastName":"Doe2","id":"moreInfo2"},'+
+                '{"firstName":"John3","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John4","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John5","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John6","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John7","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John8","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John9","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John10","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John11","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John13","lastName":"Doe2","id":"moreInfo"},'+
+                '{"firstName":"John12","lastName":"Doe2","id":"moreInfo"}]}';
+            obj=JSON.parse(text);
+            //console.log('test5_'+obj.employes[0].id+'.html');
+            //console.log(x[x.length-1]);
+
+            for (var i =0; i<obj.employes.length;i++){
+                //console.log('test5_'+obj.employes[i].id+'.html');
+                //console.log(x[x.length-1]);
+                if('test5_'+obj.employes[i].id+'.html'==x[x.length-1]){
+                    document.getElementById("private_inform").innerHTML=obj.employes[i].lastName+obj.employes[i].firstName;
+                    //console.log("hi");
+                }
+            }
+        </script>
+    </body>
+    
+</html>

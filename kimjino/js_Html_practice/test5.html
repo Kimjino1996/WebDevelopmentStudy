@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+button{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:100%;
+}
+
+</style>
+
+</head>
+<body>
+  <h1>The flex-wrap Property</h1>
+
+  <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+  <div id="demo"></div>
+  <script>
+      function openWin(text) {
+        var address="./test5_"+text+".html"
+        window.open(address);
+      }
+  </script>
+
+  <div class="flex-container" id =button_con>  
+  </div>
+  <script>
+      
+      var text='{"employes":['+
+      '{"firstName":"진오","lastName":"김","id":"moreInfo1"},'+
+      '{"firstName":"John2","lastName":"Doe2","id":"moreInfo2"},'+
+      '{"firstName":"John3","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John4","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John5","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John6","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John7","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John8","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John9","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John10","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John11","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John13","lastName":"Doe2","id":"moreInfo"},'+
+      '{"firstName":"John12","lastName":"Doe2","id":"moreInfo"}]}'
+      
+      obj=JSON.parse(text);
+      //var y=document.getElementsByClassName("named");
+      var final="";
+      for (var i =0; i<obj.employes.length;i++){
+        
+          vi=obj.employes[i].firstName+" " +obj.employes[i].lastName+"<br/>";
+          final+='<div><button class="named" type=button id="moreInfo'+(i+1)+'" value="Open Window" onclick="openWin(this.id)">'+
+            vi+'</button></div>'
+          //y[i].innerHTML=vi;
+      }
+      var y = document.getElementById('button_con')
+      y.innerHTML=final;
+  </script>
+
+  <p>Try resizing the browser window.</p>
+
+</body>
+</html>
